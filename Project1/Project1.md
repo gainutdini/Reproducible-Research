@@ -111,8 +111,9 @@ with(avg_bDay, plot(interval,steps,col = "Darkblue", type = "l",
 3. Finding the  interval that, on average, contains the maximum number of steps
 
 ```r
-int_max_steps <- avg_bDay$interval[max(avg_bDay$steps)]
-int_max_steps
+max <- max(avg_bDay$steps)
+max
+avg_bDay$interval[avg_bDay$steps== max]
 ```
 
 ```
